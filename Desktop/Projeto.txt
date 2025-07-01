@@ -30,10 +30,14 @@ CREATE TABLE funcionario_produto (
     FOREIGN KEY (idfuncionario) REFERENCES funcionario(idfuncionario),
     FOREIGN KEY (idproduto) REFERENCES produto(idproduto)
 );
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.util.Properties;
-import java.io.FileInputStream;
+[20:50, 6/30/2025] Arthur: CREATE TABLE usuario (
+    id SERIAL PRIMARY KEY,
+    usuario VARCHAR(100) NOT NULL,
+    senha VARCHAR(100) NOT NULL,
+	perfil varchar(100) not null
+);
+[20:53, 6/30/2025] Arthur: INSERT INTO usuario (usuario, senha, perfil) 
+VALUES ('admin', md5('admin'), 'administrador');
 
 
 
